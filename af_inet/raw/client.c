@@ -47,6 +47,9 @@ int main() {
     while (true)
     {
         gets(buffer);
+
+        /*the third input argument in the "sendto()" function must be the maximum length of the buffer
+        not the length of the message we want to send*/
         sendto(client_fd, buffer, 1024, 0, (struct sockaddr*) &serv_addr, size);
     }   
     

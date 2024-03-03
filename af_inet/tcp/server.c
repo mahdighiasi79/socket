@@ -35,6 +35,8 @@ int main() {
         exit(EXIT_FAILURE);
     }
 
+    /* the second input argument in the "listen()" function indicates the maximum number of connection
+       requests that can be in the queue. */ 
     ret = listen(server_fd, 10);
     if (ret < 0) {
         perror("couldn't listen on the desired socket: ");
@@ -46,6 +48,9 @@ int main() {
     new_socket = accept(server_fd, (struct sockaddr*) &address, &addrlen);
     if (new_socket >= 0) {
        while (true) {
+
+            /*the third input argumnent in the "read()" function must be total size of the buffer
+            not the message length we expect to receive*/
             size = (int) read(new_socket, buffer, 1024);
             if (size < 0) {
                 perror("recieving data failed\n");

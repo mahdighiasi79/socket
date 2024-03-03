@@ -1,0 +1,4 @@
+https://stackoverflow.com/questions/13082023/raw-socket-listener
+https://chat.openai.com/share/a7b424ee-74f5-47f7-8e6c-76ff793f2fc7
+https://sites.ualberta.ca/dept/chemeng/AIX-43/share/man/info/C/a_doc_lib/aixprggd/progcomc/skt_types.htm
+https://www.ibm.com/docs/en/ztpf/1.1.0.15?topic=considerations-unix-domain-sockets
